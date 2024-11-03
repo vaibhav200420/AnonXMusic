@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", "28178139"))
-API_HASH = getenv("API_HASH", "85172511f45230b7f8bb304f5ed8e6d8")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "7237728462:AAG3MMWNhTR51e35YGEY7u1fZ-Ex4VKMjto")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://vg766337:xksmuYTJEN6nT9j2@yukkimusic-moded-repo.ianrw.mongodb.net/?retryWrites=true&w=majority&appName=YukkiMusic-Moded-Repo")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 6000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002120476731"))
+LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1750583099))
+OWNER_ID = int(getenv("OWNER_ID", 1356469075))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,18 +32,18 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/vaibhav200420/AnonXMusic",
+    "https://github.com/kingdk88/AnonXMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Ps_Corporation_Com")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+sW_L1vwSZ1Y4NDQ9")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FONT_CHANNEL_01")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/exampurrs")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True ))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -62,8 +62,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQF4liQAVQMaF1fI_wM7qR8bKCpjJh7Q1QjSZ5VOdCqov8pej2goqRzol9mT4pApWfagYOn8mhCzzdMgX1HOr_LM1B9NTWdajIQrkQG3V5LUsX9RNd-XFkaJlCh9wliXa8-zKRVgKlg2pS0AAFVsfE21c3fS9qMG42Xcov8JC7Ma-vmqGnO67lgJALnFlW5y_EYIFd0WT2ZdoaT9lVslWb6JvIBLQ24yTVeuYU3Ac5-RF6v65mCL2hEp7rOCkLie-pgydytj28VUT-QuT346Lmbg7hg1ums5YukrWTdFOX6hJ_7ZkfH7QY6XKuyQ5-EM7uu17wGvv6tuC7W9713SSRk-rVt-DgAAAAGeHxvxAA")
-STRING2 = getenv("STRING_SESSION2", "BQGCtzAASc2P-f76Dr6jkU1m3gA623aerSNXgwZ71LVWI0b2OZA9ztpRaKTFG9OubkQfFUZteqEGEmkYfgBiJBM2gO2oytP_EHRmDwDVELE87uHjmQxhCNuc5kYxMsJTS3zZFcecTC9UMcNtQXQHoaDQkUNrg1t5A8vcVYyKOSHgIWwsSW_I98iToRmWV-yDjfdCGZanvdI1MXg451tYE9PRpHXfnwdAVh1XplOfC6J64YxXPNqP4T0Sn0opkFTsa2r48b13wTsET7erqi53eWmfdx7bmSk6MQoCht6DH-eiBZNtD3oiBSO6XOFpqrAehQB6_C4zv21yqoeDb6YPyFog7JWAAAAAGR1wUkAA")
+STRING1 = getenv("STRING_SESSION", None)
+STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
